@@ -25,6 +25,68 @@
 <p>
     Nosotros ya hemos jugado en profundidad al título y podéis descubrir qué es lo que<br> nos ha parecido leyendo nuestro análisis de Resident Evil 7. Además, también podéis<br> conocer qué impresiones ha dejado a otros medios especializados con nuestra<br> recopilación de notas de Resident Evil 7. Y si ya os habéis hecho con la<br> nueva aventura de Capcom y os está costando avanzar, no olvidéis que también está<br> disponible nuestra guía de Resident Evil 7, donde descubriréis trucos y consejos de<br> mucha utilidad para superar el juego.
 </p>
+<br>
+<form action="">
+    <input type="text" name="codigo" id="codigo"><br><br>
+    <input type="text" name="nombre" id="nombre" value="televisor"><br><br>
+    <!-- siver para poner un cuadro con un texto adentro del cuadro -->
+    <input type="text" name="precio" id="precio" placeholder="ingrese el precio">
+</form>
+<br>
+<br>
+<!-- esto sirve para poner un nombre y al costado hay un cuadro de texto -->
+<form>
+<label for="codigo">codigo de producto</label>
+<input type="text" id="codigo">
+</form>
+<br>
+<br>
+<!-- este comando sirve para poner un nombre y un circulo a lado como selecion -->
+<form action="">
+    <label for="dni">DNI</label>
+    <input type="radio" id="dni" name="tipo_documento" checked><br>
+    <label for="pasaporte">Pasaporte</label>
+    <input type="radio" id="pasaporte" name="tipo_documento"><br>
+    <label for="otro">Otro</label>
+    <input type="radio" id="otro" name="tipo_documento">
+</form>
+<br>
+<br>
+<form action="/pagina_proceso/">
+    <label for="codigo">Codigo</label>
+    <input type="text" id="codigo" name="codigo"><br>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="precio">Precio</label>
+    <input type="text" id="precio" name="precio"><br>
+    <!-- comando para usar submit Button para envia la informacion -->
+    <input type="submit" value="grabar">
+</form>
+<br>
+<br>
+<!-- Atributo target -->
+<form action="/pagina_proceso/" target="_blank">
+    <label for="codigo">Codigo</label>
+    <input type="text" id="codigo" name="codigo"><br>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="precio">Precio</label>
+    <input type="text" id="precio" name="precio">
+    <input type="submit" value="grabar">
+</form>
+<br>
+<br>
+<!-- Atributo method -->
+<form action="/pagina_proceso/" method="POST">
+    <label for="codigo">Codigo</label>
+    <input type="text" id="codigo" name="codigo"><br>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="precio">Precio</label>
+    <input type="text" id="precio" name="precio">
+    <input type="submit" value="grabar">
+</form>
+
 
 </body>
 </html>

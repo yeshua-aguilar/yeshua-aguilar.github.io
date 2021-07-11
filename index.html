@@ -1,92 +1,222 @@
 <!DOCTYPE html>
-<html lang="es-PE">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certus Yeshua Aguilar Calderon</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../Css/estilosindex.css">
+    <link rel="stylesheet" type="text/css" href="../Formulario de contacto/estilospopup.css">
+    <link rel="stylesheet" type="text/css" href="../Formulario de contacto/estilospoup.css">
+    <title>Game News</title>
 </head>
-<body>
-    Certus GO 2021 - Bienvenido Crack :)
-<br>
-<h1 style="font-size: 2em;">Resident Evil 7 - Tráiler de lanzamiento del survival horror</h1>
+<body onload="notificacion()">
+<div id="particles-js"></div>
+    <div class="contenedor">
+        <ul class="menu">
+            <div>
+                <li><a href="../index.html">INICIO</a></li> 
+                <li><a href="../pagsecundarias/playstation.html">PLAYSTATION</a></li> 
+                <li><a href="../pagsecundarias/xbox.html">XBOX</a></li> 
+                <li><a href="../pagsecundarias/nintendo.html">NINTENDO</a></li>
+                <li><a href="../pagsecundarias/pcmac.html">PC/MAC</a></li>
+                
+            </div>
+        </ul>
+        <div class="menu-registro">
+            <!-- Boton de registro con ventana popup -->
+            <input type="email" id="email" placeholder="correo electronico">
+            <input type="password" id="password" placeholder="contraseña">
+            <button onclick="registrar()">registrar</button><br>
+            <!-- Boton de inicio de sesión pero falta ventana popup -->
+            <input type="emailL" id="emailL" placeholder="correo electonico">
+            <input type="passwordL" id="passwordL" placeholder="contraseña">
+            <button onclick="login()">Ingresar</button>
+    
+        <!-- <div class="usuario">
+            <a href="#"><img src="img/imagen usuario.png" width="50em"></a>
 
-<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.heypoorplayer.com%2Fwp-content%2Fuploads%2F2017%2F01%2FResident-Evil-7-Art.jpg&f=1&nofb=1" width="550em">
+        </div> -->
 
-<p>
-    Capcom acaba de poner a la venta Resident Evil 7 para PC, PS4 y Xbox One y para<br> celebrarlo, ha mostrado su tráiler de lanzamiento. Un tráiler que podéis ver sobre<br> estas pantallas y que deja claro que la compañía ha devuelto la saga a sus orígenes de<br> survival horror con esta entrega en la que tenemos que sobrevivir a la amenaza de la<br> familia Baker.
-</p>
+    <h3 id="meslogin"></h3>
+        
+    <div class="inicio">
+        <p class="nombre">GAMES NEWS</p>
+        <p class="descripcion">
+               En esta página encontrarás las más recientes noticias, 
+               de los distintos dispositivos. Podrás obtener más 
+               información de los juegos y como descargarlos con solo un  
+               CLICK.
+               <br>
+               <br>
+               🠺Puedes dejarnos tus recomendaciones y opiniones 
+               con respecto a la noticia mostrada.🠸
+        </p>
+    </div>
+    <div class="lo_mas_visto" style="text-align: center;">
+        <p > LO MÁS VISTO</p>
+    </div>
+    <div class="noticiasgenerales">
+        <div class="noticia_1">
+            <img src="img/Outridersnoticia1.jpg" alt="noticia1">
 
-<video width="500em" height="240em" controls autoplay muted>
-    <source src="ResidentEvil7_trailer.mp4" type="video/mp4">
-    su navegador no soporta el video
-</video>
+        </div>
+        <div class="pienoticia">
+            <p>Los jugadores de Outriders reciben un pack de regalo por los problemas de lanzamiento.</p>
+            <a href="../blogs/blog_outriders.html">Ver más</a>
+        </div>
+    </div>
 
-<p>
-    Nosotros ya hemos jugado en profundidad al título y podéis descubrir qué es lo que<br> nos ha parecido leyendo nuestro análisis de Resident Evil 7. Además, también podéis<br> conocer qué impresiones ha dejado a otros medios especializados con nuestra<br> recopilación de notas de Resident Evil 7. Y si ya os habéis hecho con la<br> nueva aventura de Capcom y os está costando avanzar, no olvidéis que también está<br> disponible nuestra guía de Resident Evil 7, donde descubriréis trucos y consejos de<br> mucha utilidad para superar el juego.
-</p>
-<br>
-<form action="">
-    <input type="text" name="codigo" id="codigo"><br><br>
-    <input type="text" name="nombre" id="nombre" value="televisor"><br><br>
-    <!-- siver para poner un cuadro con un texto adentro del cuadro -->
-    <input type="text" name="precio" id="precio" placeholder="ingrese el precio">
-</form>
-<br>
-<br>
-<!-- esto sirve para poner un nombre y al costado hay un cuadro de texto -->
-<form>
-<label for="codigo">codigo de producto</label>
-<input type="text" id="codigo">
-</form>
-<br>
-<br>
-<!-- este comando sirve para poner un nombre y un circulo a lado como selecion -->
-<form action="">
-    <label for="dni">DNI</label>
-    <input type="radio" id="dni" name="tipo_documento" checked><br>
-    <label for="pasaporte">Pasaporte</label>
-    <input type="radio" id="pasaporte" name="tipo_documento"><br>
-    <label for="otro">Otro</label>
-    <input type="radio" id="otro" name="tipo_documento">
-</form>
-<br>
-<br>
-<form action="/pagina_proceso/">
-    <label for="codigo">Codigo</label>
-    <input type="text" id="codigo" name="codigo"><br>
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre"><br>
-    <label for="precio">Precio</label>
-    <input type="text" id="precio" name="precio"><br>
-    <!-- comando para usar submit Button para envia la informacion -->
-    <input type="submit" value="grabar">
-</form>
-<br>
-<br>
-<!-- Atributo target -->
-<form action="/pagina_proceso/" target="_blank">
-    <label for="codigo">Codigo</label>
-    <input type="text" id="codigo" name="codigo"><br>
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre"><br>
-    <label for="precio">Precio</label>
-    <input type="text" id="precio" name="precio">
-    <input type="submit" value="grabar">
-</form>
-<br>
-<br>
-<!-- Atributo method -->
-<form action="/pagina_proceso/" method="POST">
-    <label for="codigo">Codigo</label>
-    <input type="text" id="codigo" name="codigo"><br>
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre"><br>
-    <label for="precio">Precio</label>
-    <input type="text" id="precio" name="precio">
-    <input type="submit" value="grabar">
-</form>
+    <div class="noticiasgenerales">
+        <div class="noticia_2">
+            <img src="img/nintendonoticia2.jpg" alt="noticia2">
 
+        </div>
+        <div class="pienoticia">
+            <p>Comprar una Nintendo Switch en 2021 será una tarea complicada.</p>
+            <a href="../blogs/blog_nintendoswich.html">Ver más</a>
+        </div>
 
+    </div>
+    <div class="noticiasgenerales">
+        <div class="noticia_3">
+            <img src="img/xboxnoticia3.jpg" alt="noticia3">
+
+        </div>
+        <div class="pienoticia">
+            <p>Microsoft Flight Simulator para Xbox One ya ha sido clasificado por PEGI.</p>
+            <a href="../blogs/blog_noticiaxbox.html">Ver más</a>
+        </div>
+    </div>
+
+    <div class="noticiasgenerales">
+        <div class="noticia_4">
+            <img src="img/imgnoticia4.jpg" alt="noticia4">
+
+        </div>
+        <div class="pienoticia">
+            <p>Paquete de Operador Sparks en Call of Duty Warzone y Modern Warfare: contenidos.</p>
+            <a href="../blogs/blog_CoD.html">Ver más</a>
+        </div>
+
+    </div>
+    <!-- pie de la pagina web -->
+ <section class= "form_contacto">
+    <h4>CONTACTO</h4>
+    <label for="nombre">Ingrese su nombre: </label> 
+    <br>
+    <br>
+    <input class="controls" type="text" placeholder="Nombre" maxlength="50" name="nombre" id="nombre">
+    <br>
+    <br>
+    <label for="email">Ingrese su e-mail: </label>
+    <br>
+    <br>
+    <input class="controls" type="email" placeholder="E-mail" maxlength="50" name="correo" id="correo">
+    <br>
+    <label for="message">Escriba su mensaje: </label>
+    <br>
+    <br>
+    <textarea class="controls" name="message" class="message" placeholder="Mensaje... " id="message"></textarea>
+    <br>
+    <button class="button"><a>Enviar</a></button>
+    <br>
+    <br>
+    <div class="redes-sociales">
+        <ul>
+            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="Copyright">Copyright © 2021 Atmosphere System. Todos los derechos reservados.</p>
+    </section>
+<!-- js Particulas-->
+<script src="../JS/particles.min.js"></script>
+<script src="../JS/app.js"></script>
+<script src="../JS/alert.js"></script>
+<script src="../Formulario de contacto/popup.js"></script>
+<script src="../Formulario de contacto/poup.js"></script>
+
+<!-- codigo de sdk -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyATlYQ_PMpUNPGPGA-JPfuXmotw1crxMwc",
+    authDomain: "proyecto-as-game-news.firebaseapp.com",
+    projectId: "proyecto-as-game-news",
+    storageBucket: "proyecto-as-game-news.appspot.com",
+    messagingSenderId: "936459454879",
+    appId: "1:936459454879:web:7482c7738e3d2509ccd5aa",
+    measurementId: "G-Q52LQ24QNJ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+    var email = user.email
+    // ...
+    document.getElementById("meslogin").innerHTML = "Estas logeado " + user.email;
+  } else {
+      document.getElementById("meslogin").innerHTML = "no estas logeado"
+    // User is signed out
+    // ...
+  }
+});
+
+function registrar() {
+    var email = document.getElementById(email).value;
+    var password = document.getElementById(password).value;
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ..
+    alert(errorMessage);
+  });
+
+  function login() {
+    var emailL = document.getElementById(emailL).value;
+    var passwordL = document.getElementById(passwordL).value;
+    firebase.auth().signInWithEmailAndPassword(emailL, passwordL)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert(errorMessage);
+  });
+      
+  }
+}
+
+</script>
 </body>
 </html>

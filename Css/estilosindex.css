@@ -1,0 +1,392 @@
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+body{
+    font-family: Arial, Helvetica;
+    background: #161616;
+    margin:0;
+    margin-top: 4px;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1720px;
+    position: relative;
+    z-index: 99;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display:block;
+    
+}
+
+.menu li a{
+    animation-duration: 2s;
+    animation-name: menuli;
+}
+
+@keyframes menuli{
+    
+    from{
+     opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.menu li a{
+    animation-duration: 2s;
+    animation-name: menu;
+}
+
+@keyframes menu{
+    
+    from{
+        transform: translate3d(0.-100%,0); 
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.menu li{
+    display: inline-block;
+    text-align: left;
+
+}
+
+.menu li a:hover{
+    animation: 0.5s;
+    background: rgb(10, 10, 10);
+}
+
+.menu li a:hover{
+    border-radius: 7px;
+}
+
+
+.menu-registro{
+    position: absolute;
+    left: 950px;
+    top: 18px;
+
+}
+
+.menu-registro{
+    animation-duration: 2s;
+    animation-name: registro;
+}
+
+@keyframes registro{
+    
+    from{
+     opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.btn-abrir-popup a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    }
+.button2 a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.usuario{
+    position:absolute;
+    left: 1250px;
+    top: 5px;
+}
+
+.usuario{
+    animation-duration: 2s;
+    animation-name: user;
+}
+
+@keyframes user{
+    
+    from{
+     opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.inicio{
+    width: 1720px;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    height: 500px;
+    margin-top: -60px;
+   }
+
+   .inicio{
+    animation-duration: 2s;
+    animation-name: inicio;
+}
+
+@keyframes inicio{
+    
+    from{
+     opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.inicio{
+    animation-duration: 2s;
+    animation-name: inici;
+}
+
+@keyframes inici{
+    
+    from{
+        transform: translate3d(0.-100%,0); 
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.nombre{
+   font-size: 65px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 130px;
+   padding-top: 40px;
+   }/**/
+.descripcion{
+   color: white;
+   font-size: 22px;
+   font-family:Arial, Helvetica;
+   width: 400px;    
+   margin-left: 130px;
+   }
+.lo_mas_visto{
+    background-color: rgba(10, 10, 10, 0.753);
+    max-width: 1720px;
+    height: 50px;
+    margin-top: -25px;
+    }
+
+
+    .lo_mas_visto{
+        animation-duration: 2s;
+        animation-name: visto;
+    }
+    
+    @keyframes visto{
+        from{
+            transform: translate3d(0.-100%,0); 
+            opacity: 0;
+        }
+        to{
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+    }
+
+.lo_mas_visto p{
+    text-align: center;
+    color:white;
+    text-shadow: black;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+div.noticiasgenerales{
+    border-radius: 15px;
+    max-width: 1720px;
+    margin:30px 100px;
+    box-shadow: 0 4px 8px o lightblue, 0 6px 20px 0 rgba(10, 10, 10, 0.753);
+    float:left;
+    width: 450px;
+}
+
+div.noticiasgenerales{
+        animation-duration: 1s;
+        animation-name: noticias;
+    }
+    
+    @keyframes noticias{
+        
+        from{
+            transform: translate3d(0.-100%,0); 
+            opacity: 0;
+        }
+        to{
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+    }
+
+div.noticiasgenerales img{
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+    width: 450px;
+}
+div.pienoticia{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    background: rgb(32, 32, 32);
+    border-radius: 15px;
+} 
+div.pienoticia a{
+    background: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+div.pienoticia a:hover{
+    background: rgb(75, 74, 72);
+
+}
+.form_contacto {
+    background-image: url(../img/fondoemail.jpg);
+    position: absolute;
+    top: 1600px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    }
+.form_contacto h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+    
+    }
+.controls {
+        width: 250px;
+        background-color: #272729;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color:white;
+    }
+    
+.form_contacto p {
+        height: 50px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 50px;
+        color: black;
+    
+    }
+.form_contacto label{
+    color: black;
+
+}
+.form_contacto a {
+        color:  rgb(0, 0, 0);
+        text-decoration: none;
+    
+    }
+.form_contacto a:hover {
+        color:  rgb(0, 0, 0);
+        text-decoration: underline;
+        
+    }
+.button {
+        color: black;
+        padding: 5px;
+        display:inline-block;
+        text-decoration: none;
+        width: 100px;
+    }
+.button a{
+        color: black;
+        text-decoration: none;
+    }
+.redes-sociales{
+    max-width: 1720px;
+        display: flex;
+        height: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+.redes-sociales ul li{
+        display: inline-block;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    
+.redes-sociales ul li a{
+        display: block;
+        padding: 0 10px;
+        background-color: #333;
+        color: white;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+        transition: .2s;
+    }
+    
+.redes-sociales ul:hover a{
+        filter:blur(2px);
+    }
+    
+.redes-sociales ul li a:hover{
+        transform: translate(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+        filter: none;
+    }
+    
+.redes-sociales ul li .facebook:hover{
+        background-color: var(--facebook);
+    }
+    
+.redes-sociales ul li .instagram:hover{
+        background-color: var(--instagram);
+    }
+    
+.redes-sociales ul li .twitter:hover{
+        background-color: var(--twitter);
+    }
+.Copyright{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" type="text/css" href="../Css/estilosindex.css">
-    <link rel="stylesheet" type="text/css" href="../Formulario de contacto/estilospopup.css">
-    <link rel="stylesheet" type="text/css" href="../Formulario de contacto/estilospoup.css">
+    <link rel="stylesheet" type="text/css" href="../AS-GameNews/Css/estilosindex.css">
+    <link rel="stylesheet" type="text/css" href="../AS-GameNews/Formulario de contacto/estilospoup.css">
+    <link rel="stylesheet" type="text/css" href="..//AS-GameNews/Formulario de contacto/estilospopup.css">
     <title>Game News</title>
 </head>
 <body onload="notificacion()">
@@ -15,30 +15,54 @@
     <div class="contenedor">
         <ul class="menu">
             <div>
-                <li><a href="../index.html">INICIO</a></li> 
-                <li><a href="../pagsecundarias/playstation.html">PLAYSTATION</a></li> 
-                <li><a href="../pagsecundarias/xbox.html">XBOX</a></li> 
-                <li><a href="../pagsecundarias/nintendo.html">NINTENDO</a></li>
-                <li><a href="../pagsecundarias/pcmac.html">PC/MAC</a></li>
+                <li><a href="../AS-GameNews/index.html">INICIO</a></li> 
+                <li><a href="../AS-GameNews/pagsecundarias/playstation.html">PLAYSTATION</a></li> 
+                <li><a href="../AS-GameNews/pagsecundarias/xbox.html">XBOX</a></li> 
+                <li><a href="../AS-GameNews/pagsecundarias/nintendo.html">NINTENDO</a></li>
+                <li><a href="../AS-GameNews/pagsecundarias/xbox.html">PC/MAC</a></li>
                 
             </div>
         </ul>
         <div class="menu-registro">
             <!-- Boton de registro con ventana popup -->
-            <input type="email" id="email" placeholder="correo electronico">
-            <input type="password" id="password" placeholder="contraseña">
-            <button onclick="registrar()">registrar</button><br>
+            <button id="btn-abrir-popup" class="btn-abrir-popup">Registrarse</button>
+	        <div class="overlay" id="overlay">
+			     <div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>Registro</h3>
+				<form action="">
+					<div class="contenedor-inputs">
+						<input type="text" placeholder="Nombre" name="" id="name" ><span class="barra"></span>
+						<input type="email" placeholder="Correo" name="" id="email" ><span class="barra"></span>
+						<input type="password" placeholder="Contraseña" name="" id="password" ><span class="barra"></span>
+					</div>
+					<input type="submit" class="btn-submit" value="Registrarse">
+					<p class="warnings" id="warnings"></p>
+				</form>
+			     
+		    </div>
+        </div>
             <!-- Boton de inicio de sesión pero falta ventana popup -->
-            <input type="emailL" id="emailL" placeholder="correo electonico">
-            <input type="passwordL" id="passwordL" placeholder="contraseña">
-            <button onclick="login()">Ingresar</button>
+        <button id="btn-abrir-popup1" class="btn-abrir-popup1">Iniciar Sesión</button>
+        <div class="overlay1" id="overlay1">
+            <div class="popup1" id="popup1"> 
+            <a href="#" id="btn-cerrar-popup1" class="btn-cerrar-popup1"><i class="fas fa-times"></i></a>
+            <h3>Iniciar Sesión</h3>
+                <form action="">
+                    <div class="contenedor-inputs1">
+                        <input type="email" placeholder="Correo">
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <input type="submit1" class="btn-submit1" value="Login"></input>
+               </form>
+            </div>
+        </div>
+    </div>
     
-        <!-- <div class="usuario">
+        <div class="usuario">
             <a href="#"><img src="img/imagen usuario.png" width="50em"></a>
 
-        </div> -->
-
-    <h3 id="meslogin"></h3>
+        </div>
         
     <div class="inicio">
         <p class="nombre">GAMES NEWS</p>
@@ -63,7 +87,7 @@
         </div>
         <div class="pienoticia">
             <p>Los jugadores de Outriders reciben un pack de regalo por los problemas de lanzamiento.</p>
-            <a href="../blogs/blog_outriders.html">Ver más</a>
+            <a href="../AS-GameNews/blogs/blog_outriders.html">Ver más</a>
         </div>
     </div>
 
@@ -74,7 +98,7 @@
         </div>
         <div class="pienoticia">
             <p>Comprar una Nintendo Switch en 2021 será una tarea complicada.</p>
-            <a href="../blogs/blog_nintendoswich.html">Ver más</a>
+            <a href="../AS-GameNews/blogs/blog_nintendoswich.html">Ver más</a>
         </div>
 
     </div>
@@ -85,7 +109,7 @@
         </div>
         <div class="pienoticia">
             <p>Microsoft Flight Simulator para Xbox One ya ha sido clasificado por PEGI.</p>
-            <a href="../blogs/blog_noticiaxbox.html">Ver más</a>
+            <a href="../AS-GameNews/blogs/blog_noticiaxbox.html">Ver más</a>
         </div>
     </div>
 
@@ -96,7 +120,7 @@
         </div>
         <div class="pienoticia">
             <p>Paquete de Operador Sparks en Call of Duty Warzone y Modern Warfare: contenidos.</p>
-            <a href="../blogs/blog_CoD.html">Ver más</a>
+            <a href="../AS-GameNews/blogs/blog_CoD.html">Ver más</a>
         </div>
 
     </div>
@@ -137,86 +161,10 @@
     <p class="Copyright">Copyright © 2021 Atmosphere System. Todos los derechos reservados.</p>
     </section>
 <!-- js Particulas-->
-<script src="../JS/particles.min.js"></script>
-<script src="../JS/app.js"></script>
-<script src="../JS/alert.js"></script>
-<script src="../Formulario de contacto/popup.js"></script>
-<script src="../Formulario de contacto/poup.js"></script>
-
-<!-- codigo de sdk -->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyATlYQ_PMpUNPGPGA-JPfuXmotw1crxMwc",
-    authDomain: "proyecto-as-game-news.firebaseapp.com",
-    projectId: "proyecto-as-game-news",
-    storageBucket: "proyecto-as-game-news.appspot.com",
-    messagingSenderId: "936459454879",
-    appId: "1:936459454879:web:7482c7738e3d2509ccd5aa",
-    measurementId: "G-Q52LQ24QNJ"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
-  firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    var uid = user.uid;
-    var email = user.email
-    // ...
-    document.getElementById("meslogin").innerHTML = "Estas logeado " + user.email;
-  } else {
-      document.getElementById("meslogin").innerHTML = "no estas logeado"
-    // User is signed out
-    // ...
-  }
-});
-
-function registrar() {
-    var email = document.getElementById(email).value;
-    var password = document.getElementById(password).value;
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ..
-    alert(errorMessage);
-  });
-
-  function login() {
-    var emailL = document.getElementById(emailL).value;
-    var passwordL = document.getElementById(passwordL).value;
-    firebase.auth().signInWithEmailAndPassword(emailL, passwordL)
-  .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    alert(errorMessage);
-  });
-      
-  }
-}
-
-</script>
+<script src="../AS-GameNews/JS/particles.min.js"></script>
+<script src="../AS-GameNews/JS/app.js"></script>
+<script src="../AS-GameNews/JS/alert.js"></script>
+<script src="../AS-GameNews/Formulario de contacto/popup.js"></script>
+<script src="..//AS-GameNews/Formulario de contacto/poup.js"></script>
 </body>
 </html>

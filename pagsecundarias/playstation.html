@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../Css/estilosplaystation.css">
+    <link rel="stylesheet" type="text/css" href="../Formulario de contacto/estilospoup.css">
+    <title>GN-PLAYSTATION</title>
+</head>
+<body>
+<div id="particles-js"></div>
+    <div class="contenedor">
+        <ul class="menu">
+            <div>
+                <li><a href="../index.html">INICIO</a></li> 
+                <li><a href="../pagsecundarias/playstation.html">PLAYSTATION</a></li> 
+                <li><a href="../pagsecundarias/xbox.html">XBOX</a></li> 
+                <li><a href="../pagsecundarias/nintendo.html">NINTENDO</a></li>
+                <li><a href="../pagsecundarias/pcmac.html">PC/MAC</a></li>
+                
+                            
+        </div>
+    </ul>
+    <div class="menu-registro">
+        <!-- Boton de registro con ventana popup -->
+        <button id="btn-abrir-popup" class="btn-abrir-popup">Registrarse</button>
+        <div class="overlay" id="overlay">
+             <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Registro</h3>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" name="" id="name" ><span class="barra"></span>
+                    <input type="email" placeholder="Correo" name="" id="email" ><span class="barra"></span>
+                    <input type="password" placeholder="Contraseña" name="" id="password" ><span class="barra"></span>
+                </div>
+                <input type="submit" class="btn-submit" value="Registrarse">
+                <p class="warnings" id="warnings"></p>
+            </form>
+             </div>
+        </div>
+        <!-- Boton de inicio de sesión pero falta ventana popup -->
+        <button class="button2"><a href="#">Iniciar Sesión</a></button>
+    </div>
+        <div class="usuario">
+            <a href="#"><img src="../img/imagen usuario.png" width="50em"></a>
+
+        </div>
+        
+    <div class="inicio">
+        <h2 class="nombre">NOTICIAS PLAYSTATION</h2>
+        <p class="descripcion">
+            Aquí encontrarás todo sobre el mundo de la consola famosa PLAYSTATION de la empresa Sony.
+        </p>
+    </div>
+    
+</div>
+<!--blog numero 1-->
+<section class="contenido">
+    <div class="blogn1">
+    <h3>Los jugadores de Outriders reciben un pack de regalo por los problemas de lanzamiento</h3>
+    <img src="../img/Outridersnoticia1.jpg" alt="imagen 2" width="400em">
+    <p class="contenido_noticia1">
+        Outriders salió a la venta en Latinoamerica el pasado viernes para ofrecernos una nueva <br>
+        aventura ambientada en un universo de ciencia ficción que ofrece a los jugadores <br>
+        combate clásico de shooters...
+    </p>
+    <a href="../blogs/blog_outriders.html"><button>Leer más</button></a>
+    </div>
+     <br>
+     <br>
+     <br>
+     <div class="blog_n2">
+     <h3>Fallo en un componente de PS5 podría dejarte sin la posibilidad de jugar tus juegos</h3>
+     <img src="https://i.ibb.co/hdYTrDq/ps5componente.jpg" alt="ps5componente" width="400em">
+    <p>
+        El inminente cierre de la PlayStation Store en PlayStation 3; PlayStation Vita y PSP, <br>
+        mucho se ha hablado sobre temas de preservación de videojuegos. Esto llevó a investigaciones <br> 
+        cuyos resultados indican que podríamos enfrentarnos a un nuevo dolor de cabeza en el futuro, <br>
+         puesto que el PlayStation 5 te dejaría sin la posibilidad de jugar tus juegos si hay un fallo <br>
+         en uno de sus componentes....
+    </p>
+    <a href="../blogs/noticiaps5.html"><button>Leer más</button></a>
+    </div>
+    </section>
+    <!-- LA PARTE DE LO MAS VISTO -->
+    <h1 class="titulo_lomasvisto" style="text-align: center;">LO MAS VISTO</h1>
+    <div class="lo_masvisto">
+    <section class="Lomasvisto">
+    <br>
+    <img src="https://i.ibb.co/hdYTrDq/ps5componente.jpg" alt="ps5componente" width="310em">
+    <a id="text_1" href="../blogs/noticiaps5.html"><p>Fallo en un componente de PS5 podría dejarte sin la posibilidad de jugar tus juegos</p></a>
+    <hr>
+    <img src="https://i.ibb.co/9Gs1DC1/Pokemon.jpg" alt="Pokemon"  width="310em">
+    <a id="text_2" href="../blogs/blog_nintendo19_04_21.html"><p>Todo lo que hará especial a New Pokémon Snap y a las fotos que realizaremos a los Pokémon en su video más completo</p></a>
+    <hr>
+    <img src="https://i.ibb.co/qDdVGTW/imagen-5.jpg" alt="imagen 5" width="310em">
+    <a id="text_3" href="../blogs/blog_noticiaxbox.html"><p>Microsoft Flight Simulator para Xbox One ya ha sido clasificado por PEGI</p></a>
+    </section>
+<!-- js Particulas-->
+<script src="../JS/particles.min.js"></script>
+<script src="../JS/app.js"></script>
+<script src="../Formulario de contacto/popup.js"></script>
+</body>
+</html>

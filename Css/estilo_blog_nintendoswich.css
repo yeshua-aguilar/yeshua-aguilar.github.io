@@ -1,0 +1,125 @@
+body{
+    font-family: Arial, Helvetica;
+    background: #990303;
+}
+/*la barra de menu*/
+.menu-registro{
+    position: absolute;
+    left: 1200px;
+    top: 40px;
+}
+.usuario{
+    position: absolute;
+    left: 1400px;
+    top: 18px;
+}
+.menu{
+    position: absolute;
+    top: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+.menu li{
+    background: transparent;
+    display: inline-block;
+}
+.menu li a:hover{
+    animation: 0.5s;
+    background: rgb(10, 10, 10);  
+}
+.menu li a{
+    animation-duration: 2s;
+    animation-name: menuli;
+}
+
+@keyframes menuli{
+    
+    from{
+     opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.menu li a{
+    animation-duration: 2s;
+    animation-name: menu;
+}
+
+@keyframes menu{
+    
+    from{
+        transform: translate3d(0.-100%,0); 
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+/*contenico de la noticia*/
+.contenido{
+    position: absolute;
+    top: 250px;
+    float: left;
+    top: 100px;
+    background: rgb(235, 235, 235);
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.contenido img{
+    border-radius: 10px;
+}
+.texto_contenido{
+    text-align: center;
+    font-size: 15px;
+}
+/*la parte de los mas visto*/
+.Lomasvisto{
+    position: absolute;
+    left: 1050px;
+    top: 250px;
+    float: left;
+    background: rgb(235, 235, 235);
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.titulo_lomasvisto{
+    position: absolute;
+    float: left;
+    left: 1050px;
+    top: 100px;
+    background: rgb(177, 175, 175);
+    border-radius: 10px;
+    padding: 40px;
+    width: 26%;
+}
+#text_1{
+    color: black;
+    text-decoration: none;
+}
+#text_2{
+    color: black;
+    text-decoration: none;
+}
+#text_3{
+    color: black;
+    text-decoration: none;
+}
+#text_1:hover{
+    color: rgb(14, 255, 235);
+}
+#text_2:hover{
+    color: rgb(15, 240, 229);
+}
+#text_3:hover{
+    color: rgb(15, 240, 221);
+}
